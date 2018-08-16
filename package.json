@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile-sass": "node-sass public/sass/main.scss public/css/style.css -w",
+    "live":  "live-server public"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,11 @@
   },
   "homepage": "https://github.com/StevenGLam/smileyscalculator#readme",
   "dependencies": {
-    "live-server": "^1.2.0"
+    "live-server": "^1.2.0",
+    "scss": "^0.2.4"
+  },
+  "devDependencies": {
+    "node-sass": "^4.9.2",
+    "sass": "^1.10.1"
   }
 }
